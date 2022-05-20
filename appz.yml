@@ -19,17 +19,17 @@ deploy:
     
 volumes:
   - claim: postgres-replica-data
-    mount: /appz/data
+    mount: /DataDrive/postgres/data
     name: data
     size: 5Gi
     mode: ReadWriteOnce   
   - claim: postgres-replica-home
-    mount: /appz/home
+    mount: /DataDrive/postgres/home
     name: home
     size: 5Gi
     mode: ReadWriteOnce   
   - claim: postgres-replica-backup
-    mount: /appz/backup
+    mount: /DataDrive/postgres/backup
     name: backup
     size: 5Gi
     mode: ReadWriteOnce  
